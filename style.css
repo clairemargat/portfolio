@@ -1,0 +1,143 @@
+/* Import de la police Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet');
+
+body {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+}
+
+
+body {
+  font-family: "Manrope", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #222;
+  background: #fffcf8;
+  line-height: 1.6;
+
+/*Ajustement du bold */
+b,
+strong {
+  font-weight: 600; /* moins gras que le bold par défaut */
+
+}
+
+header {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: #fffcf8;
+  border-bottom: 1px solid #DCC4A5;
+  color: black;
+}
+
+h1 { font-size: 2.5rem; margin-bottom: 0.3rem; }
+h2 { margin-top: 2rem; border-bottom: 2px solid #DCC4A5; display: inline-block; }
+
+main {
+  max-width: 60%;
+  margin: auto;
+  padding: 1rem;
+}
+
+a {
+      color: black;           /* change la couleur du texte */
+    }
+
+    a:hover {
+      color: #DCC4A5;             /* couleur au survol */
+    }
+
+    a:visited {
+      color: #74624B;            /* couleur pour les liens visités */
+    }
+
+    a:active {
+      color: lightcoral;          /* couleur quand on clique */
+    }
+
+.gif-texte {
+  display: flex;           /* active Flexbox */
+  align-items: center;     /* centre verticalement le GIF et le texte */
+  gap: 20px;               /* espace entre le GIF et le texte */
+}
+
+.gif-texte img {
+  width: 150px;            /* ajuste la taille du GIF */
+  height: auto;
+}
+
+.mbti-texte {
+  display: flex;           /* active Flexbox */
+  align-items: center;     /* centre verticalement le GIF et le texte */
+  gap: 20px;               /* espace entre le GIF et le texte */
+}
+
+.mbti-texte img {
+  width: 150px;            /* ajuste la taille du GIF */
+  height: auto;
+}
+
+.mantras p {
+  font-size: 32px;
+}
+
+hr {
+  border: none;
+  margin-left: 0;
+  height: 1px;
+  width: 20%;
+  background-color: #DCC4A5;
+}
+
+.mockup {
+  display: flex;       /* met les images côte à côte */
+  gap: 40px;           /* espace entre les images */
+  align-items: flex-start;
+  flex-wrap:wrap;
+  }
+
+   .multi-images img {
+  max-width: 50%;      /* ajuste selon ton design */
+  height: auto;
+}
+
+.designsystem {
+  display: flex;       /* met les images côte à côte */
+  gap: 40px;           /* espace entre les images */
+  align-items: flex-start;
+  flex-wrap:wrap;
+  }
+
+.note{
+  font-size: 14px;
+  font-style:italic;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  color: #ffffff;
+  background: #74624B;
+}
+
+/* Lien spécifique au footer */
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Lien du footer au survol */
+footer a:hover {
+  color: #DCC4A5;
+}
+
+/* Style pour les liens visités */
+footer a:visited {
+  color: #fffcf8;
+}
+
+.languages {
+  font-size: 20px;
+}
+
