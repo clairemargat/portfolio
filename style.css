@@ -55,26 +55,60 @@ a {
       color: lightcoral;          /* couleur quand on clique */
     }
 
-.gif-texte {
+.hobby-anime {
   display: flex;           /* active Flexbox */
   align-items: center;     /* centre verticalement le GIF et le texte */
   gap: 20px;               /* espace entre le GIF et le texte */
 }
 
-.gif-texte img {
+.hobby-anime img {
   width: 150px;            /* ajuste la taille du GIF */
   height: auto;
 }
 
-.mbti-texte {
+/* --- VERSION MOBILE --- */
+@media (max-width: 768px) {
+  .hobby-anime {
+    flex-direction: column-reverse; /* empile les images verticalement */
+    align-items: center;    /* centre horizontalement les images */
+    gap: 30px;              /* réduit l’espace entre les images */
+  }
+   .hobby-anime img {
+    width: 80%;            /* pleine largeur sur mobile */
+    max-width: 500px;       /* limite max pour éviter trop grand sur tablettes */
+  }
+
+}
+
+.hobby-img {
   display: flex;           /* active Flexbox */
   align-items: center;     /* centre verticalement le GIF et le texte */
   gap: 20px;               /* espace entre le GIF et le texte */
 }
 
-.mbti-texte img {
+.hobby-img img {
   width: 150px;            /* ajuste la taille du GIF */
   height: auto;
+}
+
+/* --- VERSION MOBILE --- */
+@media (max-width: 768px) {
+  .hobby-img {
+    flex-direction: column; /* empile les images verticalement */
+    align-items: center;    /* centre horizontalement les images */
+    gap: 30px;              /* réduit l’espace entre les images */
+  }
+   .hobby-img img {
+    width: 80%;            /* pleine largeur sur mobile */
+    max-width: 500px;       /* limite max pour éviter trop grand sur tablettes */
+  }
+
+}
+
+@media (min-width: 769px) {
+  .hobbies hr {
+    display: none; /* <-- cache la ligne sur desktop */
+  }
 }
 
 .mantras p {
@@ -90,23 +124,96 @@ hr {
 }
 
 .mockup {
-  display: flex;       /* met les images côte à côte */
-  gap: 40px;           /* espace entre les images */
+  display: flex;            /* 3 images côte à côte */
+  flex-direction: column; /* empile verticalement image et légende*/
+  gap: 40px;                /* espace entre les images */
   align-items: flex-start;
-  flex-wrap:wrap;
-  }
-
-   .multi-images img {
-  max-width: 50%;      /* ajuste selon ton design */
-  height: auto;
+  justify-content: center;
+  flex-wrap: wrap;          /* permet de passer à la ligne si trop petit */
 }
 
-.designsystem {
-  display: flex;       /* met les images côte à côte */
-  gap: 40px;           /* espace entre les images */
-  align-items: flex-start;
-  flex-wrap:wrap;
+.mockup img {
+  width: 40%;               /* largeur sur desktop */
+  height: auto;             /* conserve les proportions */
+  display: block;           /* évite les espaces blancs */
+}
+
+/* --- VERSION MOBILE --- */
+@media (max-width: 768px) {
+  .mockup {
+    flex-direction: column; /* empile les images verticalement */
+    align-items: center;    /* centre horizontalement les images */
+    gap: 30px;              /* réduit l’espace entre les images */
   }
+
+  .mockup img {
+    width: 100%;            /* pleine largeur sur mobile */
+    max-width: 500px;       /* limite max pour éviter trop grand sur tablettes */
+  }
+
+}
+
+.oneimg {
+  display: flex;            /* 3 images côte à côte */
+  flex-direction: column; /* empile verticalement image et légende*/
+  gap: 40px;                /* espace entre les images */
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;          /* permet de passer à la ligne si trop petit */
+}
+
+.oneimg img {
+  width: 60%;               /* largeur sur desktop */
+  height: auto;             /* conserve les proportions */
+  display: block;           /* évite les espaces blancs */
+}
+
+/* --- VERSION MOBILE --- */
+@media (max-width: 768px) {
+  .oneimg {
+    flex-direction: column; /* empile les images verticalement */
+    align-items: center;    /* centre horizontalement les images */
+    gap: 30px;              /* réduit l’espace entre les images */
+  }
+
+  .oneimg img {
+    width: 100%;            /* pleine largeur sur mobile */
+    max-width: 500px;       /* limite max pour éviter trop grand sur tablettes */
+  }
+}
+
+.prototype {
+  width: 60%;                /* largeur sur desktop */
+  margin: 0 auto;            /* centre le bloc */
+  text-align: center;      /* centre la légende */
+}
+
+.prototype video {
+  width: 100%;               /* s'adapte au parent */
+  height: auto;              /* conserve les proportions */
+  aspect-ratio: 16 / 9;      /* réserve l’espace, évite les "sauts" (CLS) */
+  display: block;            /* supprime les espaces blancs */
+  background: #000;          /* pour éviter les bords blancs avant chargement */
+  background-color: white;  /* fond blanc au lieu de noir */
+}
+
+.prototype .note {
+  margin-top: 20px;       /* espace entre la vidéo et la légende */
+}
+
+/* --- VERSION MOBILE --- */
+@media (max-width: 768px) {
+  .prototype {
+    width: 100%;             /* pleine largeur sur mobile */
+    align-items: center; 
+    padding: 0 10px;         /* petit espace intérieur pour respirer */
+  }
+
+  .prototype video {
+    width: 100%;
+    max-width: 100%;         /* ne déborde jamais */
+  }
+}
 
 .note{
   font-size: 14px;
