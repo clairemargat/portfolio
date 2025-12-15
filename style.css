@@ -1,250 +1,197 @@
-/* Import de la police Montserrat */
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet');
+/* -------------------- IMPORT FONTS -------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tienne:wght@400;700&display=swap');
 
-body {
-  font-family: 'Manrope', sans-serif;
-  font-weight: 400;
-}
-
-
+/* -------------------- RESET & BASE -------------------- */
 body {
   font-family: "Manrope", sans-serif;
   margin: 0;
   padding: 0;
   color: #222;
-  background: #fffcf8;
+  background: #fcfbfe;
   line-height: 1.6;
-
-/*Ajustement du bold */
-b,
-strong {
-  font-weight: 600; /* moins gras que le bold par défaut */
-
 }
+
+b, strong { font-weight: 600; }
 
 header {
   text-align: center;
-  padding: 3rem 1rem;
-  background: #fffcf8;
-  border-bottom: 1px solid #DCC4A5;
+  padding: 1rem;
+  background: #ffffff;
+  box-shadow: 0 5px 15px #e5e6e8;
   color: black;
 }
 
 h1 { font-size: 2.5rem; margin-bottom: 0.3rem; }
-h2 { margin-top: 2rem; border-bottom: 2px solid #DCC4A5; display: inline-block; }
+h2 { font-size: 1.7rem; margin-top: 2rem; display: inline-block; }
+h3 { font-size: 1.5rem; font-weight: 600; }
 
-main {
-  max-width: 60%;
-  margin: auto;
-  padding: 1rem;
-}
+main { max-width: 60%; margin: auto; padding: 1rem; }
 
-a {
-      color: black;           /* change la couleur du texte */
-    }
+/* -------------------- LIENS -------------------- */
+a { color: black; }
+a:hover { color: #7B71A8; }
+a:visited { color: black; }
+a:active { color: #7B71A8; }
 
-    a:hover {
-      color: #DCC4A5;             /* couleur au survol */
-    }
+.hobbies a { color: white; }
 
-    a:visited {
-      color: #74624B;            /* couleur pour les liens visités */
-    }
-
-    a:active {
-      color: lightcoral;          /* couleur quand on clique */
-    }
-
-.hobby-anime {
-  display: flex;           /* active Flexbox */
-  align-items: center;     /* centre verticalement le GIF et le texte */
-  gap: 20px;               /* espace entre le GIF et le texte */
-}
-
-.hobby-anime img {
-  width: 150px;            /* ajuste la taille du GIF */
-  height: auto;
-}
-
-/* --- VERSION MOBILE --- */
-@media (max-width: 768px) {
-  .hobby-anime {
-    flex-direction: column-reverse; /* empile les images verticalement */
-    align-items: center;    /* centre horizontalement les images */
-    gap: 30px;              /* réduit l’espace entre les images */
-  }
-   .hobby-anime img {
-    width: 80%;            /* pleine largeur sur mobile */
-    max-width: 500px;       /* limite max pour éviter trop grand sur tablettes */
-  }
-
-}
-
-.hobby-img {
-  display: flex;           /* active Flexbox */
-  align-items: center;     /* centre verticalement le GIF et le texte */
-  gap: 20px;               /* espace entre le GIF et le texte */
-}
-
-.hobby-img img {
-  width: 150px;            /* ajuste la taille du GIF */
-  height: auto;
-}
-
-/* --- VERSION MOBILE --- */
-@media (max-width: 768px) {
-  .hobby-img {
-    flex-direction: column; /* empile les images verticalement */
-    align-items: center;    /* centre horizontalement les images */
-    gap: 30px;              /* réduit l’espace entre les images */
-  }
-   .hobby-img img {
-    width: 80%;            /* pleine largeur sur mobile */
-    max-width: 500px;       /* limite max pour éviter trop grand sur tablettes */
-  }
-
-}
-
-@media (min-width: 769px) {
-  .hobbies hr {
-    display: none; /* <-- cache la ligne sur desktop */
-  }
-}
-
-.mantras p {
-  font-size: 32px;
-}
-
-hr {
-  border: none;
-  margin-left: 0;
-  height: 1px;
-  width: 20%;
-  background-color: #DCC4A5;
-}
-
-.mockup {
-  display: flex;            /* 3 images côte à côte */
-  flex-direction: column; /* empile verticalement image et légende*/
-  gap: 40px;                /* espace entre les images */
-  align-items: flex-start;
-  justify-content: center;
-  flex-wrap: wrap;          /* permet de passer à la ligne si trop petit */
-}
-
-.mockup img {
-  width: 40%;               /* largeur sur desktop */
-  height: auto;             /* conserve les proportions */
-  display: block;           /* évite les espaces blancs */
-}
-
-/* --- VERSION MOBILE --- */
-@media (max-width: 768px) {
-  .mockup {
-    flex-direction: column; /* empile les images verticalement */
-    align-items: center;    /* centre horizontalement les images */
-    gap: 30px;              /* réduit l’espace entre les images */
-  }
-
-  .mockup img {
-    width: 100%;            /* pleine largeur sur mobile */
-    max-width: 500px;       /* limite max pour éviter trop grand sur tablettes */
-  }
-
-}
-
-.oneimg {
-  display: flex;            /* 3 images côte à côte */
-  flex-direction: column; /* empile verticalement image et légende*/
-  gap: 40px;                /* espace entre les images */
-  align-items: flex-start;
-  justify-content: center;
-  flex-wrap: wrap;          /* permet de passer à la ligne si trop petit */
-}
-
-.oneimg img {
-  width: 60%;               /* largeur sur desktop */
-  height: auto;             /* conserve les proportions */
-  display: block;           /* évite les espaces blancs */
-}
-
-/* --- VERSION MOBILE --- */
-@media (max-width: 768px) {
-  .oneimg {
-    flex-direction: column; /* empile les images verticalement */
-    align-items: center;    /* centre horizontalement les images */
-    gap: 30px;              /* réduit l’espace entre les images */
-  }
-
-  .oneimg img {
-    width: 100%;            /* pleine largeur sur mobile */
-    max-width: 500px;       /* limite max pour éviter trop grand sur tablettes */
-  }
-}
-
-.prototype {
-  width: 60%;                /* largeur sur desktop */
-  margin: 0 auto;            /* centre le bloc */
-  text-align: center;      /* centre la légende */
-}
-
-.prototype video {
-  width: 100%;               /* s'adapte au parent */
-  height: auto;              /* conserve les proportions */
-  aspect-ratio: 16 / 9;      /* réserve l’espace, évite les "sauts" (CLS) */
-  display: block;            /* supprime les espaces blancs */
-  background: #000;          /* pour éviter les bords blancs avant chargement */
-  background-color: white;  /* fond blanc au lieu de noir */
-}
-
-.prototype .note {
-  margin-top: 20px;       /* espace entre la vidéo et la légende */
-}
-
-/* --- VERSION MOBILE --- */
-@media (max-width: 768px) {
-  .prototype {
-    width: 100%;             /* pleine largeur sur mobile */
-    align-items: center; 
-    padding: 0 10px;         /* petit espace intérieur pour respirer */
-  }
-
-  .prototype video {
-    width: 100%;
-    max-width: 100%;         /* ne déborde jamais */
-  }
-}
-
-.note{
-  font-size: 14px;
-  font-style:italic;
-}
-
-footer {
-  text-align: center;
-  padding: 2rem;
-  font-size: 0.9rem;
+/* -------------------- HOBBIES / THINGS THAT I LOVE -------------------- */
+.hobby-img, .mind, .hobby-anime {
+  background-color: #7D73AB;
+  border-radius: 10rem;
   color: #ffffff;
-  background: #74624B;
+  padding: 20px 40px 20px 80px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 3rem;
 }
 
-/* Lien spécifique au footer */
-footer a {
-  color: #ffffff;
-  text-decoration: none;
+.hobby-img img, .hobby-anime img { width: 150px; height: auto; border-radius: 2rem 0 2rem 0; }
+
+.things-that-i-love .hobby-anime,
+.things-that-i-love .hobby-img {
+  padding: 26px 56px;
+  border-radius: 2rem;
 }
 
-/* Lien du footer au survol */
-footer a:hover {
-  color: #DCC4A5;
+.things-that-i-love .hobby-anime img,
+.things-that-i-love .hobby-img img {
+  width: 120px;
+  max-width: 35%;
+  height: auto;
+  padding-right: 16px;
 }
 
-/* Style pour les liens visités */
-footer a:visited {
-  color: #fffcf8;
+/* -------------------- MOCKUP -------------------- */
+.mockup { display: flex; flex-direction: column; gap: 50px; align-items: center; }
+.mockup img { width: 90%; height: auto; display: block; }
+
+/* -------------------- PROJECTS -------------------- */
+.project {
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px #e5e6e8;
+  padding: 2em 4em;
 }
 
-.languages {
-  font-size: 20px;
+.project img { display: block; height: auto; max-width: 100%; }
+
+.twoimg, .oneimg { display: flex; flex-direction: column; gap: 2em; align-items: center; }
+.twoimg img { width: 42%; }
+.oneimg img { width: 100%; }
+
+/* -------------------- SINGLE IMAGES -------------------- */
+.simage img { width: 50%; }
+.mimage img { width: 70%; }
+
+/* -------------------- VIDEO -------------------- */
+.prototype { width: 100%; margin: 0 auto; }
+.prototype video { width: 100%; aspect-ratio: 16/9; background-color: white; }
+
+.note { font-size: 14px; font-style: italic; margin-top: 10px; }
+
+/* -------------------- FOOTER -------------------- */
+footer { padding: 3rem 0 2rem 8rem; font-size: 0.9rem; background: #ffffff; box-shadow: inset 0 5px 15px #e5e6e8; }
+footer a, footer a:hover, footer a:visited { color: black; }
+.signature { text-align: center; }
+
+/* -------------------- BIG MANTRA -------------------- */
+.bigmantra { font-size: 3rem; font-family: 'Tienne', serif; font-style: italic; line-height: 1.05; margin: 0.5rem 0; }
+
+/* -------------------- UTILITIES -------------------- */
+.hide-mobile img { display: none; }
+
+/* ========================================================= */
+/* ================        MOBILE        ===================== */
+@media (max-width: 768px) {
+
+  main { max-width: 90%; }
+
+  /* BIG MANTRA */
+  .bigmantra { font-size: 2rem; margin-bottom: 1rem; }
+
+  /* HOBBIES empilement + padding réduit */
+  .hobby-img, .hobby-anime, .mind {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    gap: 24px;
+    border-radius: 2rem;
+  }
+  .hobby-anime { flex-direction: column-reverse; }
+
+  .hobby-img img, .hobby-anime img, .things-that-i-love .hobby-anime img, .things-that-i-love .hobby-img img {
+    width: 50%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .hobby-img img { margin-bottom:0rem; margin-top:1rem; }
+  .hobby-anime img { margin-bottom:1rem; margin-top:0rem; }
+
+  /* MOCKUP mobile */
+  .mockup img { width: 100%; max-width: 500px; }
+
+  /* Images twoimg sur colonne */
+  .twoimg { flex-direction: column; gap: 2rem; }
+  .twoimg img { width: 100%; max-width: 500px; }
+
+  .simage img { width: 80%; }
+  .mimage img { width: 90%; }
+
+  /* FOOTER mobile */
+  footer { padding-left: 2rem; text-align: center; }
+
+  /* -------------------- PAGE-SPECIFIQUE -------------------- */
+
+  /* Home page : masquage images projets sur mobile uniquement */
+  body.index .project img,
+  body.index .project picture {
+      display: none !important;
+      width: 0 !important;
+      height: 0 !important;
+      opacity: 0 !important;
+      visibility: hidden !important;
+  }
+
+  /* Product Manager : masquage légendes + images projets sur mobile */
+  body.product-manager .project img,
+  body.product-manager .project picture,
+  body.product-manager figcaption,
+  body.product-manager .note,
+  body.product-manager .caption,
+  body.product-manager .legend {
+      display: none !important;
+      width: 0 !important;
+      height: 0 !important;
+      opacity: 0 !important;
+      visibility: hidden !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      overflow: hidden !important;
+  }
+
+  /* Réduction espace autour des blocs Product Manager */
+  body.product-manager .project,
+  body.product-manager .twoimg,
+  body.product-manager .oneimg {
+      padding: 0.5em 0 !important;
+      margin-bottom: 0 !important;
+  }
+
+  /* Kipli / Projects / Netrivals : masquage complet des blocs sur mobile */
+  body.kipli .project,
+  body.projects .project,
+  body.netrivals .project {
+      display: none !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      height: 0 !important;
+      overflow: hidden !important;
+  }
 }
 
+/* CACHE LA LIGNE SUR DESKTOP */
+@media (min-width: 769px) { .hobbies hr { display: none; } }
