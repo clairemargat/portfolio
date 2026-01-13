@@ -10,31 +10,78 @@
 </head>
 
 <body>
-  <header>
-    <h1>Projects</h1>
-  </header>
+  <header class="site-header">
+  <a href="index.html">
+  <img src="logo.jpg" alt="logo_claire_margat"></a>
+
+  <a href="https://calendly.com/claire-margat106/30min" class="header-btn">Schedule a call 📲 </a>
+</header>
 
   <main>
+
+  <section class="project">
+
     <p><a href="index.html"><b>← back to homepage</b></a></p>
-    <section class="projects">
+            
+            <div class="project1">
+              <h1>establishing the Product function for Netrivals</h1>
 
-            <div class="project">
-              <h2>Product Manager at Netrivals</h2>
-              <p>Mai 2023 → Juin 2024</p>
-              <h3>Establishing and structuring the Product function within the organization</h3>
-              <p><i>Netrivals</i> is a Spanish <b>price intelligence</b> company which software <b>leverages the power of data to enable e-commerce businesses to stay competitive in real time</b>, based on a predefined pricing strategy.</b></p>
-              <p>In 2022, Netrivals was acquired by <i>Lengow</i>, an e-commerce automation platform that helps businesses manage the distribution of their product catalogs across multiple sales channels.</p>
-              <p>As part of the merger and acquisition, it became necessary to implement a true product culture and to structure the existing organization. </p>
-              <p>I got hired <b>to implement the Product function within the organization</b></p> 
-              
+                <div class="infos">
+            <p>May 2023 → June 2024<br>
+     BtoB Saas<br>collab. Product Designer, Engeneering team, Product Marketing</p>
+   </div>
 
-<h3>Discovery and investigation</h3>
+    <h2>Context</h2>
+    
+              <p><i>Netrivals</i> is a Spanish price intelligence software which <b>leverages the power of data to enable e-commerce businesses to stay competitive in real time</b>, based on a predefined pricing strategy.</b></p>
+              <p>In 2022, Netrivals was acquired by <i>Lengow</i>, an automation platform that helps businesses to manage their product catalogs distribution across multiple sales channels.</p>
+              <p>As part of the merger and acquisition, it became necessary to implement a true product culture and to structure the organization. </p>
+              <p><b>I got hired to implement the Product function within the organization</b></p>
+
+
+  <h2>Challenges</h2> 
+
+  <p>Establishing the Product function at Netrivals was particularly challenging due to the absence of structured product governance.</p> 
+  <p>The organization operated in a highly reactive mode, with:
+  <ul>
+    <li>No centralized feedback system</li> 
+    <lI>Unclear decision-making processes</lI>
+    <li>Direct, unfiltered communication between Customer Success and engineering teams</li></ul>  
+    <p>This resulted in frequent interruptions, misaligned priorities, unprofitable technical decisions, and growing technical debt.</p> 
+      <p>Additionally, the high variability of client needs across industries, combined with inconsistent feature behavior and fragmented qualitative and quantitative data, made prioritization difficult and often subjective.</p> 
+      <p>Implementing a product culture required not only new tools and processes, but also a deep organizational shift to align business value, customer needs, and technical feasibility within a fast-moving B2B SaaS environment.</p>
+
+
+
+<h2>Process</h2>
+
+<p>
+  The implementation of the Product function followed a structured, <b>step-by-step approach</b>:</p>
+
+<p>
+  <ul>
+    <li><b>Internal and external preliminary investigation</b> to understand organizational dynamics, decision-making processes, and client needs</li>
+
+<li><b>Identification of key improvement areas</b>, including information flow, feedback management, and product governance</li>
+
+<li><b>Audit and alignment of management tools across entities</b>, leading to the deployment of a centralized product platform and shared roadmap</li>
+
+<li><b>Establishment of structured prioritization</b>, using objective frameworks to align product decisions with business impact</li>
+
+<li><b>Creation of a centralized data foundation</b>, aggregating quantitative insights to inform product strategy and roadmap decisions</li>
+
+<lI><b>Implementation of a scalable, Agile-inspired development process</b>, improving collaboration, transparency, and execution</lI>
+
+<li><b>Deployment of documentation and knowledge management practices</b>, ensuring long-term scalability and efficient onboarding</li>
+
+<li><b>Introduction of a cross-functional communication framework</b>, fostering continuous alignment between Product, Engineering, Customer Success, Sales, and leadership</li>
+</ul>
+</p>
+
+<h2>Preliminary investigations</h2>
 
 <p>
 In order to <b>understand the organization</b>, its internal dynamics, and the product challenges at hand, <b>I conducted a series of interviews and investigations</b> across the organization — <b>internally</b> with CSMs, developers, sales representatives, and top management; <b>externally</b> with clients from different industries.</p>
-
-
-<h4>Internal preliminary investigation</h4>
 <p>I conducted interviews among CSMs and technical teams in order to answer the following questions:
 </p>
 
@@ -47,7 +94,6 @@ In order to <b>understand the organization</b>, its internal dynamics, and the p
   <li>Do those actions make lose money to business?</li>
 </ul>
 
-<h4>Lack of centralized information</h4>
 <p>Audit preliminary results allow to identify the following painpoints:</p>
 <ul>
 <li>Absence of process and tools for gathering and following feedbacks</li>
@@ -56,49 +102,61 @@ In order to <b>understand the organization</b>, its internal dynamics, and the p
 
 <p>The current organisation revealed a <b>lack of visibility into business priorities</b> and <b>limited structured product governance</b>.</p>
 
-<figure class="simage">
+<div class="project">
+<figure>
           <img src="orgabefore.jpg" alt="organization" width="30%">
-          <figcaption img="orgabefore" class="note">Information flow before management tool implementation</figcaption>
-          <img src="orgaafter.jpg" alt="organization" width="30%">
-          <figcaption img="orgabefore" class="note">Information flow after management tool implementation</figcaption>
+         
         </figure>
+      </div>
 
 <p>As a result, CSMs were directly transmitting client requests to developers, often bypassing product evaluation. </p></li>Technical teams would be pressued and interrupted in their work.
 
 <p> Would result <b>unbalancing resource allocation</b>, <b>unprofitable decisions</b>, and the <b>accumulation of significant technical debt</b> across the platform.</p>
 
-<h4>External preliminary investigation</h4>
 
-<p>I conducted interviews among clients in order to answer the following questions:</p>
+<p>I also conducted interviews among clients in order to answer the following questions:</p>
 
 <ul><li>What are the clients needs?</li>
 <li>Is the product effectively answering their needs?</li> 
 <li>What challenges and difficulties are the clients facing?</li> 
 <li>How is the clients pool structured?</li></ul>
 
-<h4>Main results</h4>
+<h2>Room for improvement! </h2>
 
-<p>Through this process, I uncovered key challenges such as the <b>high variability of client needs across industries</b>, <b>inconsistent feature behavior</b>, and a <b>lack of unified feedback channels</b>.</p> 
-<p>I also noticed <b>difficulties in prioritizing or escalating clients requests</b> effectively.</p>
+<p>Through this process, I uncovered key challenges such as the high variability of client needs across industries, inconsistent feature behavior, and a lack of unified feedback channels. I also noticed difficulties in prioritizing or escalating clients requests effectively.</p> 
 
-
-<h4>Room for improvement! </h4>
 
 <p><b>This first phase revealed not only the need for better tools and organisation but also for a true product culture — one that aligns business value, customer needs, and technical feasibility.</b></p>
 
+<div class="project">
+<figure>
+        <img src="orgaafter.jpg" alt="organization" width="30%">
+      </figure>
+    </div>
 
-<h3>Management tools audit and alignment across entities</h3>
+<h2>Management tools audit and alignment across entities: moving away from a static Excel file to a dynamic and transparent system</h2>
 
-Following this diagnostic phase, I conducted an audit of existing tools and processes with the goal of rationalizing resources across the group’s two entities (following the recent merger and acquisition).
-After deep market study and evaluation, I selected <b>Jira Product Discovery</b>, a newly launched and free tool by Atlassian, as the primary platform for product management. 
+<p>Following this diagnostic phase, I conducted an audit of existing tools and processes with the goal of rationalizing resources across the group’s two entities (following the recent merger and acquisition).</p>
+<p>After deep market study and evaluation, I selected <b>Jira Product Discovery, a newly launched and free tool by Atlassian</b>, as the primary platform for product management.</p> 
 
-<figure class="oneimg">
-  <img src="roadmapjpd.jpg" alt="roadmap">
-  <figcaption class="note">Illustration of the roadmap designed on Jira Product Discovery </figcaption>
+
+<p>I deployed the tool for Netrivals and later, at the group level, for Lengow.</p> 
+<p>I gathered the existing feedback history within the organization, configured the Jira Product Discovery tool according to the activity’s criteria, integrated the existing feedback, and created an idea submission form so that everyone could share product improvement and development ideas.</p> 
+<p><b>The CSMs were briefed on the feedback from their clients and were able to stay informed in real time about the prioritization of topics being addressed as well as their progress.</b></p>
+
+<p>I designed a structured process for ticket creation, review, documentation and synchronization with the roadmap.<p> 
+
+<p>This gave all stakeholders a shared view of ongoing and upcoming projects<Lp>.
+
+<div class="project">
+<figure>
+  <img src="roadmap.jpg" alt="roadmap">
 </figure>
+</div>
 
-<h4>Smooting interactions between each team</h4>
-The implementation of Jira Product Discovery had several advantages:
+<h2>Smooting interactions between teams</h2>
+
+<p>The implementation of Jira Product Discovery had several advantages:
 <ul>
   <li>Being completely free for use</li>
   <li>Allowing collection of ideas</li>
@@ -109,22 +167,18 @@ The implementation of Jira Product Discovery had several advantages:
   <li>Being compatible for integratation with the existing ecosystem: Jira Software (used by developers) and Zendesk (used by the support and customer service teams)</li>
  </ul> 
 
- <figure class="mimage">
+ <p>I designed a form for idea colection based on the organisation and software specificities.</p>
+
+<div class="project">
+ <figure>
   <img src="form.jpg" alt="form">
-  <figcaption class="note">Illustration of the form designed for idea colection</figcaption>
 </figure>
+</div>
 
- <h4>Moving away from a static Excel file to a dynamic and transparent system</h4>
 
- <p>I deployed the tool for Netrivals and later, at the group level, for Lengow.</p> 
-<p>I gathered the existing feedback history within the organization, configured the Jira Product Discovery tool according to the activity’s criteria, integrated the existing feedback, and created an idea submission form so that everyone could share product improvement and development ideas.</p> 
-<p><b>The CSMs were briefed on the feedback from their clients and were able to stay informed in real time about the prioritization of topics being addressed as well as their progress.</b></p>
 
-<p>I designed a structured process for ticket creation, review, documentation and synchronization with the roadmap.<p> 
 
-<p>This gave all stakeholders a shared view of ongoing and upcoming projects<Lp>.
-
-<h4>Establishing Priorities</h4>
+<h2>Establishing priorities</h2>
 
 <p>Once the roadmap was established, my focus shifted to managing and <b>prioritizing actions.</b></p>
 
@@ -132,50 +186,40 @@ The implementation of Jira Product Discovery had several advantages:
 
 <p>To bring rigor and objectivity, I implemented the <b>RICE prioritization method</b> (Reach, Impact, Confidence, Effort).</p>
 
-<figure class="oneimg">
+<div class="project">
+<figure>
   <img src="rice.jpg" alt="rice">
-  <figcaption class="note">Extract of the documentation established for scoring ideas</figcaption>
 </figure>
+</div>
 
-<p><b>Key achievements</b>: within a few months, the team managed to address 30% more high-priority requests, significantly reduce backlog and duplicate tickets, and, most importantly, establish a genuine business-driven culture within the company.</p>
+<h2>Data center project management: aggregation of quantitative data to inform product decisions</h2>
 
-<h4>Example of strategic decision: deleting an entire feature</h4>
-<p>One notable outcome was the removal of a complex feature that had become a “false promise” to clients. It addressed a legitimate need but only for a small, low-revenue segment. No competitor had successfully implemented it, and it generated significant dissatisfaction, internal frustration, and UI complexity.</p>
-<p>Thanks to the visibility offered by the roadmap, and the RICE method calculation, I took the decision of removing this feature, which represented a small technical effort.</p> 
-<p>This decision allowed the team to refocus efforts on high-value clients and strategic features, directly improving user satisfaction and product ROI.</p>
-
-<h4>Data Center Project Management – Aggregation of quantitative data to inform product decision</h4>
-
-<p>It quickly became a priority to create a centralized data hub aimed at aggregating all available quantitative data to support product strategy and decision-making. This initiative involved several key stages:</p>
+<p>A centralized data hub was created to consolidate quantitative insights and support product strategy and decision-making. Key steps included:</p>
 
 <ul>
   <li>
-    <strong>Audit of existing data collection tools:</strong><br>
-    I conducted a comprehensive audit of the data sources and collection tools already in place across the organization. This included mapping existing analytics platforms (e.g., Google Analytics, Mixpanel, internal BI tools) and identifying overlaps, gaps, and inconsistencies in the way data was gathered and reported.
+    <strong>Data tools audit:</strong> I reviewed existing analytics and BI tools to identify gaps, overlaps, and inconsistencies.
   </li>
 
   <li>
-    <strong>Definition of business and product metrics:</strong><br>
-    In collaboration with stakeholders (Product, Marketing, and Customer Success), I defined the key performance indicators (KPIs) and metrics most relevant to product performance and user engagement. This ensured alignment between strategic objectives and measurable data points.
+    <strong>Definition of key metrics:</strong>: I aligned with marketing, and customer Success on KPIs relevant to product performance and user engagement.
   </li>
 
   <li>
-    <strong>Collaboration with the Data Analyst:</strong><br>
-    I worked closely with the data analyst to design and validate the data aggregation model. Together, we addressed challenges related to <em>data consolidation, normalization, and accessibility</em>, ensuring that information from multiple systems could be centralized and interpreted coherently.
+    <strong>Collaboration with Data Analytics:</strong> I worked in discovery on a unified data model, ensuring consolidation, normalization, and accessibility of analytic data.
   </li>
 
   <li>
-    <strong>Data governance and sharing framework:</strong><br>
-    We defined clear processes for data collection, validation, and sharing across teams. This included setting up standardized dashboards and access protocols to ensure all stakeholders could make data-informed decisions.
+    <strong>Data governance:</strong>: I implementated shared dashboards and clear processes for data collection and access.
   </li>
 
   <li>
-    <strong>Outcome:</strong><br>
-    The project enabled the product team to base roadmap decisions on reliable, unified data, improving prioritization and alignment with business goals.
+    <strong>Outcome:</strong> roadmap decisions became data-driven, improving prioritization and alignment with business objectives.
   </li>
 </ul>
 
-<h4>Implementing a scalable development process (Agile-inspired)</h4>
+
+<h2>Implementing a scalable development process (Agile-inspired)</h2>
 
 <p>To ensure smooth execution, I implemented a structured development process inspired by Agile principles.</p>
 <p>While the company wasn’t yet fully mature for complete Agile adoption, I introduced <b>key rituals and practices</b>: sprint planning, backlog grooming, retrospectives, and short iteration cycles.</p>
@@ -183,13 +227,13 @@ The implementation of Jira Product Discovery had several advantages:
 
 <b>Agile methodology emphasizes continuous delivery, feedback, and improvement, which perfectly matched the company’s need to regain flexibility and responsiveness.</b>
 
-<h4>Documentation and knowledge management</h4>
+<h2>Documentation and knowledge management</h2>
 
-To ensure long-term scalability and knowledge sharing, I created a centralized documentation system using <b>Confluence</b>.
+<p>To ensure long-term scalability and knowledge sharing, I created a centralized documentation system using <b>Confluence</b>.</p>
 <p>Each project or feature had its own technical and functional documentation, making information accessible across the entire organization.</p>
 <p>This initiative <b>improved alignment</b>, <b>reduced dependency</b> on individuals, and <b>supported onboarding</b> for new team members.</p>
 
-<h4>Communication and cross-functional alignment</h4>
+<h2>Communication and cross-functional alignment</h2>
 
 <p>I established a clear communication framework to ensure continuous alignment across teams:</p>
 
@@ -199,48 +243,18 @@ To ensure long-term scalability and knowledge sharing, I created a centralized d
 <li>Monthly updates with Sales and Top Management</li>
 </ul>
 
-These regular ceremonies allowed everyone to <b>track progress</b>, <b>anticipate challenges</b>, and <b>maintain strategic alignment</b> between product vision, market needs, and technical execution.
+<p>These regular ceremonies allowed everyone to <b>track progress</b>, <b>anticipate challenges</b>, and <b>maintain strategic alignment</b> between product vision, market needs, and technical execution.</p>
 
-<h4>Conclusion</h4>
+<h2>Outcome</h2>
 
-<p>This project marked a <b>turning point</b> in the company’s product management approach.
+
+<p><b>This project marked a turning point</b> in the company’s product management approach.
 <p>By introducing structure, tools, and a product-centric mindset, I helped transform an organization once driven by technical urgency into one capable of making data-driven, customer-focused, and business-aligned product decisions.</p>
 
+  <p><b>Within a few months, the team managed to address 30% more high-priority requests, significantly reduce backlog and duplicate tickets, and, most importantly, establish a genuine business-driven culture within the company.</b></p>
+
 <p><b>The result was a stronger, more mature, and more scalable product organization — ready to support growth and innovation.</b></p>
-</p>
-
-<h3>Day-to-day product management</h3>
-
-In parallel to these function improvements, I  led operational product evolutions and maintenance topics.
-
-
-<h3>Visual merge lead product management</h3>
-
-<p>As part of a merger and acquisition process, we carried out a <b>complete visual redesign of the SaaS interface</b> to align the different products under a unified brand identity. The project involved several key stages:</p>
-
-<ul>
-<li><p><b>Brand and design alignment</b>: in collaboration with the marketing and design teams, we defined the new visual identity and style guidelines that would apply across all group products. This included selecting a coherent color palette, typography, iconography, and overall visual tone to ensure consistency and complementarity among the different interfaces.</p></li>
-
-<li><p><b>Cross-team coordination</b>: I coordinated workshops and discussions between the product, marketing, and design teams to ensure that all stakeholders had a shared understanding of the new brand direction and its impact on the user experience.</p></li>
-
-<lI><p><b>Implementation planning</b>: together with the development teams, I helped translate the design guidelines into practical UI components and a shared design system to facilitate consistent implementation across products.</p></lI>
-
-<li><p><b>Follow-up and governance</b>: as Product Manager, I oversaw the rollout of the new visual identity across all platforms, ensuring that each product adhered to the new brand standards. I acted as the main point of contact for verifying compliance, resolving design inconsistencies, and guaranteeing the global coherence of the group’s product ecosystem.</p></li>
-</ul>
-<br>
-<figure class="oneimg">
-  <img src="newcolors.jpg" alt="newcolor">
-  <figcaption class="note">New graphic charter: Lengow group graphic charter applied to Netrivals interface</figcaption>
-</figure>
-<br>
-<h3>Business case: how to manage Google Analytics 4 migration?</h3>
-
-At <i>Lengow</i> and <i>Netrivals</i>, we use Google Analytics Universal to analyze our users’ behavior on both platforms.
-In addition, at Netrivals, we have a feature called 'Sales Performance' that is connected to our clients’ Google Analytics, where we show them the traffic they have for each product of their catalogue.
-On July 1, 2023, Google will deprecate this version of Analytics, so we must adapt to the new version of Analytics: Google Analytics 4 (GA4).
-The developers are waiting to know what to do. What is the process for managing this task?
-
-<p><b>Problem resolution will be uploaded soon!</b></p>        
+</p>    
 
          <br>
              
