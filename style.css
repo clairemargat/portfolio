@@ -12,6 +12,8 @@ body {
   line-height: 1.8;
 }
 
+/* padding pages internes uniquement */
+
 b, strong { font-weight: 600; }
 
 header {
@@ -27,25 +29,28 @@ header {
 
 header img { max-height: 6rem; }
 
-.about p {font-size: 1.7rem; line-height: 1.8;}
+.about {
+  padding: 4rem 4rem 4rem 6rem;
+}
 
-h1 { font-size: 2.5rem; margin: 0rem; }
+
+.about p {font-size: 1.5rem; line-height: 1.8;}
+
+h1 { font-size: 2.5rem; margin: 0rem;}
 h2 { font-size: 1.7rem; margin-top: 2rem; display: inline-block; }
 h3 { font-size: 1.3rem; font-weight: 600; }
 
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 2fr; /* 1/3 - 2/3 */
+  grid-template-columns: 1fr 2.5fr; /* 1/3 - 2/3 */
     height: calc(100vh - 80px); /* 80px ≈ hauteur du header */
 }
 
 .col-gauche {
   background: #fcfbfe;      /* blanc */
   box-sizing: border-box;/* le padding ne casse pas la largeur */
-  padding: 2rem 2rem 0rem 3rem; /* haut / droite / bas / gauche */
   margin: 0;             /* aucune marge */
-
 }
 
 .col-droite {
@@ -61,15 +66,32 @@ h3 { font-size: 1.3rem; font-weight: 600; }
   min-height: 0;
 }
 
-.projects {
-  padding: 0rem 4rem;
-  font-size:1.7rem
+.col-droite h1 {
+  padding-left: 4rem;
 }
 
+.projects {
+  display: flex;        /* deux colonnes côte à côte */
+  padding: 0 4rem 2rem 4rem ;
+  gap: 2rem;
+}
+
+.projects .col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;            /* espace vertical entre projets */
+}
+
+
 .project {
-  padding: 0rem 6rem;
-  max-width: 65%;
+  padding-left: 6rem;
+  max-width: 60%;
   font-size:1.3rem;
+}
+
+.project img {
+max-width: 100%;
 }
 
 .col-droite img {
@@ -98,8 +120,6 @@ h3 { font-size: 1.3rem; font-weight: 600; }
 /*-------- GRID PROJECT HEADER -------------*/
 
 .project-header {
-  display: grid;
-  grid-template-columns: 1fr auto; /* titre à gauche, infos à droite */
   column-gap: 1rem;
   align-items: center;
   padding-top:1.7rem;
@@ -107,15 +127,15 @@ h3 { font-size: 1.3rem; font-weight: 600; }
 }
 
 .project-header p {
-  text-align: right;   /* texte ferré à droite */
   margin: 0;
   color:grey;
-  font-size: 1.2rem;
+  font-size: 1rem;
 
 }
 
 .project-header h3 {
   margin: 0;
+  font-size:1.2rem;
 }
 
 .full-width-section {
@@ -124,10 +144,22 @@ h3 { font-size: 1.3rem; font-weight: 600; }
 }
 
 .project img {
-  width: 150%;
+  width: 100%;
+}
+
+.project-item {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
 
 
+.project-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
 
 /*------------ FLOATING BUTTON IMG---------------- */
@@ -301,21 +333,28 @@ footer a, footer a:hover, footer a:visited { color: black; }
 }
 
 
+
+
 /* ========================================================= */
 /* ======================= RESPONSIVE ====================== */
 /* ========================================================= */
 
 @media (max-width: 900px) {
 
+  /* projects in one column only */
+   .projects {
+    flex-direction: column; /* 2 columns → 1 column */
+  }
+
   /* about */
   .about {
     padding-left: 4rem;
-    padding-right: 2rem;
+    padding-right: 4rem;
   }
 
   /* padding pages internes uniquement */
   body main {
-    padding: 0 2rem;
+    padding: 4rem 2rem;
   }
 
   /* colonnes -> vertical */
@@ -368,7 +407,7 @@ footer a, footer a:hover, footer a:visited { color: black; }
 
   .floating-btn {
   position: absolute;
-  width: 60%;
+  width: 40%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); /* centre horizontal + vertical */
